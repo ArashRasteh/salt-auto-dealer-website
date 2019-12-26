@@ -1,0 +1,93 @@
+/*
+ Theme Name:   Salt Auto LLC
+ Description:  Arash Theme Child Theme
+ Author:       Arash
+ Author URI:   http://arashrasteh.com
+ Template:     arash-theme
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: Montserrat,'Trebuchet MS',Helvetica,sans-serif;
+}
+
+/* Navbar */
+
+img.custom-logo {
+    max-width: 100%;
+    height: auto;
+    width: 200px;
+}
+
+nav.navbar {
+    background-color: #141539;
+}
+
+.menu-item {
+    margin: 5px;
+    list-style: none;
+		position: relative;
+}
+
+.menu-item a {
+    color: white;
+}
+
+@media only screen and (min-width: 768px) {
+	ul.sub-menu {
+    position: absolute;
+    right: 0;
+    background-color: #141539;
+    text-align: center;
+    padding: 10px;
+    z-index: 999;
+    display: none;
+	}
+
+	.menu-item:hover ul.sub-menu, ul.sub-menu:hover{
+	display: block;
+	}
+
+	ul.sub-menu .menu-item {
+	  width: 244px;
+	  margin: 10px 0;
+	}
+
+	ul.sub-menu .menu-item:last-of-type {
+	  margin-bottom: 0;
+	}
+
+	ul.sub-menu .menu-item:first-of-type {
+	  margin-top: 0;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	#main-menu {
+    	margin-top: 5px;
+	}
+	#main-menu ul.sub-menu {
+    	padding-left: 5%;
+	}
+}
+
+/* Footer */
+#wrapper-footer .site-info {
+    padding: 0 78px;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Hubspot */
+div#hubspot-messages-iframe-container {
+    /* margin-bottom: 38px; */
+}
